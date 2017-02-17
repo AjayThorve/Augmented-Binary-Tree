@@ -1,6 +1,6 @@
 import tree.node;
 import java.util.*;
-public class BST{
+public class ABT{
     static int sum;
     public static void main(String args[]){
         Tree T=new Tree();
