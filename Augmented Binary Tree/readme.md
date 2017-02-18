@@ -29,16 +29,20 @@ T.Insert(16);
 
 //deleting a few nodes and checking the in-order traversal
 T.deletekey(25);
+
 T.inOrderTraversal(T.root);
 
 T.deletekey(10);
+
 T.inOrderTraversal(T.root);
 
 T.deletekey(3);
+
 T.inOrderTraversal(T.root);
 
 
 #Output:
+
 Inorder Traversal:element(node-size):
 
 1(size=2,sum=3),
@@ -71,6 +75,8 @@ postOrder Traversal: 2,1,6,4,9,16,15,25,20,10,8,3,
 preOrder Traversal: 3,1,2,8,4,6,10,9,20,15,16,25,
 
 * DELETION *
+
+
 After deleting node with data=25
 
 Inorder Traversal:element(node-size): 
@@ -98,7 +104,11 @@ Inorder Traversal:element(node-size):
 
 
 
+
+
 * DELETION *
+
+
 After deleting node with data=10
 
 Inorder Traversal:element(node-size): 
@@ -125,7 +135,10 @@ Inorder Traversal:element(node-size):
 
 
 
+
+
 * DELETION *
+
 After deleting node with data=3
 
 Inorder Traversal:element(node-size): 
