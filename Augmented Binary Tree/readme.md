@@ -30,13 +30,21 @@ Inorder Traversal:element(node-size):
 4(size=2,sum=10),
 
 6(size=1,sum=6),
+
 8(size=9,sum=113),
+
 9(size=1,sum=9),
+
 10(size=6,sum=95),
+
 15(size=2,sum=31),
+
 16(size=1,sum=16),
+
 20(size=4,sum=76),
+
 25(size=1,sum=25),
+
 
 postOrder Traversal: 2,1,6,4,9,16,15,25,20,10,8,3,
 preOrder Traversal: 3,1,2,8,4,6,10,9,20,15,16,25,
