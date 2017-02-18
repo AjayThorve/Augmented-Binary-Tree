@@ -24,8 +24,21 @@ public class ABT{
         System.out.print("\npreOrder Traversal: ");
         T.preOrderTraversal(T.root);
 
+        System.out.println("\n\n\n* DELETION *\nAfter deleting node with data=25");
+        T.deletekey(25);
+        
+        System.out.println("\nInorder Traversal:element(node-size): ");
+        T.inOrderTraversal(T.root);
+
+        System.out.println("\n\n\n* DELETION *\nAfter deleting node with data=10");
+        T.deletekey(10);
+        
+        System.out.println("\nInorder Traversal:element(node-size): ");
+        T.inOrderTraversal(T.root);
+
         System.out.println("\n\n\n* DELETION *\nAfter deleting node with data=3");
         T.deletekey(3);
+        
         System.out.println("\nInorder Traversal:element(node-size): ");
         T.inOrderTraversal(T.root);
        // T.displayTree(T.root);
@@ -94,20 +107,27 @@ class Tree{
 
     
 public void deletekey(int key){
-    root=delete(root,key);
+    if(root==null){
+            System.out.println("Tree empty, no node to be deleted");
+        }
+    else{
+        root=delete(root,key);
+        //root.size--;
+        //root.sum-=key;
+    }
 }
 
 //deleting the node from binary tree
     public node delete(node n, int key){
-        if(n==null){
-            System.out.println("Tree empty, no node to be deleted");
-            return n;
-        }
         if(key<n.data){
             n.left=delete(n.left,key); // recursive call to search in left subtree
+           n.size--;
+           n.sum-=key;
         }
         else if(key>n.data){
             n.right=delete(n.right,key);// recursive call to search in right subtree
+            n.size--;
+            n.sum-=key;
         }
         else{
             // Case 1: node with 0 or 1 child
@@ -121,6 +141,8 @@ public void deletekey(int key){
             // Case 2: node with 2 children
             n.data=minValue(n.right);// find minimum value node in right subtree and replace n's value with it
             n.right=delete(n.right,n.data); //delete the minimum value node(the successor)
+            n.size--;
+            n.sum-=key;
         }
         return n;
     }
