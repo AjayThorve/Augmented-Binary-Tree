@@ -1,4 +1,4 @@
-# Augmented-Binary-Tree
+# Augmented-Binary-Tree providing mean and median
 Implementation in Java
 Store "size" and "sum" of each node
 
