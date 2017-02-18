@@ -22,9 +22,13 @@ Output:
 Inorder Traversal:element(node-size):
 
 1(size=2,sum=3),
+
 2(size=1,sum=2),
+
 3(size=12,sum=119),
+
 4(size=2,sum=10),
+
 6(size=1,sum=6),
 8(size=9,sum=113),
 9(size=1,sum=9),
