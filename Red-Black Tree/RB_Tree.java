@@ -6,16 +6,19 @@ public class RB_Tree{
     public static void main(String args[]){
         T=new Tree();
         sum=0;
-        insert(1);
-        insert(12);
-	insert(7);
-        insert(15);
-        insert(18);
-        insert(9);
-        insert(20);
-        insert(8);
-	insert(13);
-        insert(19);
+
+        insert(1);      // inserting A
+        insert(12);     // inserting L
+		insert(7);      // inserting G
+        insert(15);     // inserting O
+        insert(18);     // inserting R
+        insert(9);      // inserting I
+        insert(20);     // inserting T
+        insert(8);      // inserting H
+		insert(13);     // inserting M
+        insert(19);     // inserting S
+
+
         System.out.println("\nInorder Traversal:element(node-size): ");
         T.inOrderTraversal(T.root);
 
@@ -219,7 +222,7 @@ public int select(node n,int pos){
     }
 }
 
-
+/* Delete function to be implemented later
 public void deletekey(int key){
     if(root==null){
             System.out.println("Tree empty, no node to be deleted");
@@ -290,31 +293,7 @@ public void deletekey(int key){
             return(sum(n.left) + n.data + sum(n.right)); 
         } 
     }
-
-//displayTree
-    public void displayTree(node n){
-        if(n==root){
-            System.out.println("\t\t"+n.data);
-        }
-        if(n!=null){
-            if(n.left!=null){
-                System.out.print("\t"+n.left.data+"(left of "+n.data+"),");
-            }
-            if(n.right!=null){
-                System.out.print("\t\t "+n.right.data+"(right of "+n.data+"),");
-            }
-            System.out.println("");
-            displayTree(n.left);
-            displayTree(n.right);
-        }
-        /*if(n!=null){
-                    System.out.println(n.data+",");
-
-        displayTree(n.left);
-        displayTree(n.right);
-        }*/
-    }
-
+*/
 //in-order tree traversal
     public void inOrderTraversal(node n){
         if(n!=null){
@@ -331,23 +310,7 @@ public void deletekey(int key){
             inOrderTraversal(n.right);
         }
     }
-//post-order tree traversal
-    public void postOrderTraversal(node n){
-        if(n!=null){
-            postOrderTraversal(n.left);
-            postOrderTraversal(n.right);
-            System.out.print(n.data+",");
 
-        }
-    }
 
-//pre-order tree traversal
-    public void preOrderTraversal(node n){
-        if(n!=null){
-            System.out.print(n.data+",");
-            preOrderTraversal(n.left);
-            preOrderTraversal(n.right);
-
-        }
-    }
 }
+
