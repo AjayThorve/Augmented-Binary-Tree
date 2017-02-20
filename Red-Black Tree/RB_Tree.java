@@ -6,6 +6,7 @@ public class RB_Tree{
     public static void main(String args[]){
         T=new Tree();
         sum=0;
+
         insert(1);      // inserting A
         insert(12);     // inserting L
 		insert(7);      // inserting G
@@ -16,6 +17,8 @@ public class RB_Tree{
         insert(8);      // inserting H
 		insert(13);     // inserting M
         insert(19);     // inserting S
+
+
         System.out.println("\nInorder Traversal:element(node-size): ");
         T.inOrderTraversal(T.root);
 
@@ -308,4 +311,6 @@ public void deletekey(int key){
         }
     }
 
+
 }
+
