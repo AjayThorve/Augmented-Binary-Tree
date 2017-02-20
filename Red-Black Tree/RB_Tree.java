@@ -8,13 +8,13 @@ public class RB_Tree{
         sum=0;
         insert(1);
         insert(12);
-		insert(7);
+	insert(7);
         insert(15);
         insert(18);
         insert(9);
         insert(20);
         insert(8);
-		insert(13);
+	insert(13);
         insert(19);
         System.out.println("\nInorder Traversal:element(node-size): ");
         T.inOrderTraversal(T.root);
