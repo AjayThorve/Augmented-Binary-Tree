@@ -6,16 +6,16 @@ public class RB_Tree{
     public static void main(String args[]){
         T=new Tree();
         sum=0;
-        insert(1);
-        insert(12);
-		insert(7);
-        insert(15);
-        insert(18);
-        insert(9);
-        insert(20);
-        insert(8);
-		insert(13);
-        insert(19);
+        insert(1);      // inserting A
+        insert(12);     // inserting L
+		insert(7);      // inserting G
+        insert(15);     // inserting O
+        insert(18);     // inserting R
+        insert(9);      // inserting I
+        insert(20);     // inserting T
+        insert(8);      // inserting H
+		insert(13);     // inserting M
+        insert(19);     // inserting S
         System.out.println("\nInorder Traversal:element(node-size): ");
         T.inOrderTraversal(T.root);
 
