@@ -66,6 +66,7 @@ class Tree{
         if(root==null){
             root=newNode;
             root.size=1;
+            root.rank=1;
             root.sum=n;
             return;
         }
@@ -73,6 +74,7 @@ class Tree{
         
         while(true){
             if(n<current.data){
+                current.rank+=1;
                 current.size+=1;
                 current.sum+=n;
                 if(current.left!=null)
@@ -82,6 +84,7 @@ class Tree{
                 else{
                     current.left=newNode;
                     current.left.size=1;
+                    current.left.rank=1;
                     current.left.sum=n;
                     //root.sum+=n;
                     return;
@@ -96,6 +99,7 @@ class Tree{
                 else{
                     current.right=newNode;
                     current.right.size=1;
+                    current.right.rank=1;
                     current.right.sum=n;
                    // root.sum+=n;
                    // updateRanks(root,0);
@@ -207,7 +211,7 @@ public void deletekey(int key){
     public void inOrderTraversal(node n){
         if(n!=null){
             inOrderTraversal(n.left);
-            System.out.println(n.data+"(size="+n.size+",sum="+n.sum+"),");
+            System.out.println(n.data+"(Size="+n.size+",Rank="+n.rank+",sum="+n.sum+"),");
             inOrderTraversal(n.right);
         }
     }
