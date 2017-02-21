@@ -1,6 +1,7 @@
 # Augmented-Binary-Tree
 Implementation in Java
 Store "size" and "sum" of each node
+Update 21st feb: added "rank" augmentation<br>
 #Input :
 //inserting the tree nodes one by one
 T.Insert(3);
